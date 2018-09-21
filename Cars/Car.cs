@@ -22,7 +22,7 @@ namespace Cars
             this.Color = AColor;
         }
 
-        public override string ToString()
+        public override string WhatAmI()
         {
             return string.Format("I am a {0} {1} {2}", this.Color, this.Make, this.Model);
         }
