@@ -58,7 +58,7 @@
         // {titel}, geschreven door {auteur}, verscheen voor het eerst in {jaar van uitgave}
         // Kijk eventueel naar het voorbeeld in Cars.cs
 
-        public override string WhatAmI()
+        public override string ToString()
         {
             return string.Format("{0}, geschreven door {1}, verscheen voor het eerst in {2}", this.Title, this.Author, this.YearPublished);
         }

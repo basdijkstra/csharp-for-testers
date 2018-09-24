@@ -27,7 +27,7 @@ namespace Cars
             Car myCar = new Car("Alfa Romeo", "Giulia", "blue");
 
             // Act
-            string myCarString = myCar.WhatAmI();
+            string myCarString = myCar.ToString();
 
             // Assert
             Assert.AreEqual(myCarString, "I am a blue Alfa Romeo Giulia");
