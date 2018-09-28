@@ -9,30 +9,30 @@
 
         public Magazine(string ATitle, PublicationFrequency PubFrequency, bool ItHasAds, bool ItIsStillRunning)
         {
-            this.Title = ATitle;
-            this.AppearsEvery = PubFrequency;
-            this.HasAdvertiments = ItHasAds;
-            this.IsStillRunning = ItIsStillRunning;
+            Title = ATitle;
+            AppearsEvery = PubFrequency;
+            HasAdvertiments = ItHasAds;
+            IsStillRunning = ItIsStillRunning;
         }
 
         public void ChangePublicationFrequencyTo(PublicationFrequency NewPubFrequency)
         {
-            this.AppearsEvery = NewPubFrequency;
+            AppearsEvery = NewPubFrequency;
         }
 
         public void DiscontinueMagazine()
         {
-            this.IsStillRunning = false;
+            IsStillRunning = false;
         }
 
         public bool ICanAdvertiseInThisMagazine()
         {
-            return this.HasAdvertiments && this.IsStillRunning;
+            return HasAdvertiments && IsStillRunning;
         }
 
         public bool IsAMonthlyMagazine()
         {
-            return this.AppearsEvery.Equals(PublicationFrequency.Monthly);
+            return AppearsEvery.Equals(PublicationFrequency.Monthly);
         }
     }
 }

@@ -10,33 +10,33 @@ namespace Cars
 
         public Car()
         {
-            this.Make = "Default make";
-            this.Model = "Default model";
-            this.Color = "Default color";
+            Make = "Default make";
+            Model = "Default model";
+            Color = "Default color";
         }
 
         public Car(string AMake, string AModel, string AColor)
         {
-            this.Make = AMake;
-            this.Model = AModel;
-            this.Color = AColor;
+            Make = AMake;
+            Model = AModel;
+            Color = AColor;
         }
 
         public override string ToString()
         {
-            return string.Format("I am a {0} {1} {2}", this.Color, this.Make, this.Model);
+            return string.Format("I am a {0} {1} {2}", Color, Make, Model);
         }
 
         public Boolean IsItalian()
         {
             string[] ItalianCarsList = {"Fiat", "Alfa Romeo", "Lancia", "Ferrari", "Maserati", "Lamborghini" };
 
-            return (Array.IndexOf(ItalianCarsList, this.Make) > -1);
+            return (Array.IndexOf(ItalianCarsList, Make) > -1);
         }
 
         public void PaintCar(string newColor)
         {
-            this.Color = newColor;
+            Color = newColor;
         }
     }
 }

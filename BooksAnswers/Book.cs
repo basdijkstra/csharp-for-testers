@@ -19,20 +19,20 @@
 
         public Book(string ATitle, string AnAuthor, int AYearPublished, bool IsAFirstEdition)
         {
-            this.Title = ATitle;
-            this.Author = AnAuthor;
-            this.YearPublished = AYearPublished;
-            this.IsFirstEdition = IsAFirstEdition;
+            Title = ATitle;
+            Author = AnAuthor;
+            YearPublished = AYearPublished;
+            IsFirstEdition = IsAFirstEdition;
         }
 
         // Voeg een constructor toe zonder argumenten
         // Kies passende default waarden voor elke property
         public Book()
         {
-            this.Title = "Random title";
-            this.Author = "Somebody";
-            this.YearPublished = 1234;
-            this.IsFirstEdition = false;
+            Title = "Random title";
+            Author = "Somebody";
+            YearPublished = 1234;
+            IsFirstEdition = false;
         }
 
         // Schrijf een methode die de waarde van een boek kunstmatig verhoogte
@@ -42,7 +42,7 @@
 
         public void ArtificiallyIncreaseValue()
         {
-            this.IsFirstEdition = true;
+            IsFirstEdition = true;
         }
 
         // Schrijf een methode waarmee je de auteur van een boek kan aanpassen
@@ -51,7 +51,7 @@
 
         public void SetGhostWriter(string GhostWriterName)
         {
-            this.Author = GhostWriterName;
+            Author = GhostWriterName;
         }
 
         // Schrijf een methode ToString() die de volgende zin teruggeeft:
@@ -60,7 +60,7 @@
 
         public override string ToString()
         {
-            return string.Format("{0}, geschreven door {1}, verscheen voor het eerst in {2}", this.Title, this.Author, this.YearPublished);
+            return string.Format("{0}, geschreven door {1}, verscheen voor het eerst in {2}", Title, Author, YearPublished);
         }
     }
 }

@@ -7,7 +7,7 @@
 
         public virtual string WhatAmI()
         {
-            return string.Format("I am a {0} vehicle with {1} wheels", this.Color, this.NumberOfWheels);
+            return string.Format("I am a {0} vehicle with {1} wheels", Color, NumberOfWheels);
         }
     }
 }

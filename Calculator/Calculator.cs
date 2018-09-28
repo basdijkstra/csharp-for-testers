@@ -6,37 +6,37 @@
 
         public Calculator()
         {
-            this.CurrentTotal = 0;
+            CurrentTotal = 0;
         }
 
         public Calculator(int InitialValue)
         {
-            this.CurrentTotal = InitialValue;
+            CurrentTotal = InitialValue;
         }
 
         public void SetCurrentTotal(int NewCurrentTotal)
         {
-            this.CurrentTotal = NewCurrentTotal;
+            CurrentTotal = NewCurrentTotal;
         }
 
         public int GetCurrentTotal()
         {
-            return this.CurrentTotal;
+            return CurrentTotal;
         }
 
         public void Add(int NumberToAddToCurrentTotal)
         {
-            this.CurrentTotal += NumberToAddToCurrentTotal;
+            CurrentTotal += NumberToAddToCurrentTotal;
         }
 
         public void Subtract(int NumberToSubtractFromCurrentTotal)
         {
-            this.CurrentTotal -= NumberToSubtractFromCurrentTotal;
+            CurrentTotal -= NumberToSubtractFromCurrentTotal;
         }
 
         public void Multiply(int NumberToMultiplyCurrentTotalWith)
         {
-            this.CurrentTotal *= NumberToMultiplyCurrentTotalWith;
+            CurrentTotal *= NumberToMultiplyCurrentTotalWith;
         }
     }
 }

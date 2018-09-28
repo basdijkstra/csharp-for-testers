@@ -6,7 +6,7 @@
 
         public override int CalculateSalary()
         {
-            return this.PaidPerHour * this.WorkingHours + BONUS;
+            return PaidPerHour * WorkingHours + BONUS;
         }
     }
 }
