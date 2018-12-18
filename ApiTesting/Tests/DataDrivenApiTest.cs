@@ -51,8 +51,8 @@ namespace ApiTesting.Tests
             Assert.That((string)jsonResponse.country, Is.EqualTo("Italy"));
         }
 
-        [TestCase("nl", "7411", HttpStatusCode.OK)]
-        [TestCase("lv", "1050", HttpStatusCode.NotFound)]
+        [TestCase("nl", "7411", HttpStatusCode.OK, TestName = "Check status code for NL zip code 7411")]
+        [TestCase("lv", "1050", HttpStatusCode.NotFound, TestName = "Check status code for LV zip code 1050")]
         public void StatusCodeTest(string countryCode, string zipCode, HttpStatusCode expectedHttpStatusCode)
         {
             // arrange
