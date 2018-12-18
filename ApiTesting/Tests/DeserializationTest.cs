@@ -1,10 +1,7 @@
 ﻿using ApiTesting.DataTypes;
-using Newtonsoft.Json;
 using NUnit.Framework;
 using RestSharp;
 using RestSharp.Deserializers;
-using System.Net;
-using System.Linq;
 
 namespace ApiTesting.Tests
 {
@@ -80,7 +77,7 @@ namespace ApiTesting.Tests
 
             // assert
             Assert.That(
-                locationResponse.Places.ElementAt<Place>(0).PlaceName,
+                locationResponse.Places[0].PlaceName,
                 Is.EqualTo("Beverly Hills")
             );
         }
