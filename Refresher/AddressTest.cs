@@ -1,8 +1,8 @@
 ﻿namespace Refresher
 {
     // Opgave 1
-    // Voeg aan dit project de packages NUnit (3.10.1) en
-    // NUnit3TestAdapter (3.10.0) toe
+    // Voeg aan dit project de packages NUnit en
+    // NUnit3TestAdapter toe
     
     // Opgave 2
     // Markeer deze klasse als testklasse
